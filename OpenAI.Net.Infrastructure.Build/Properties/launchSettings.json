@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OpenAI.Net.Infrastructure.Build": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
