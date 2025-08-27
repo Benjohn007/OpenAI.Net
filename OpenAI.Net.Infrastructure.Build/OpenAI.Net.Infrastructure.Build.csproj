@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="ADotNet" Version="4.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+    <PackageReference Include="RESTFulSense" Version="3.2.0" />
   </ItemGroup>
 
 </Project>

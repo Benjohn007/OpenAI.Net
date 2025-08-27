@@ -7,14 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Brokers\" />
     <Folder Include="Clients\" />
+    <Folder Include="Models\Configurations\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ADotNet" Version="4.1.0" />
+    <PackageReference Include="RESTFulSense" Version="3.2.0" />
   </ItemGroup>
 
 </Project>
