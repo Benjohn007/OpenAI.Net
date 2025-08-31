@@ -1,16 +1,13 @@
 ﻿using OpenAI.Net.Models;
 using RESTFulSense.Clients;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace OpenAI.Net.Brokers.OpenAIs
 {
-    internal partial class OpenAIBroker
+    internal partial class OpenAIBroker : IOpenAIBroker
     {
         private readonly ApiConfigurations apiConfigurations;
         private readonly HttpClient httpClient;
@@ -30,7 +27,7 @@ namespace OpenAI.Net.Brokers.OpenAIs
             await this.apiClient.PostContentAsync<T>(relativeUrl, content);
 
         public async ValueTask<TResult> PostAsync<TRequest,TResult>(string relativeUrl, TRequest content) =>
-            await this.apiClient.PostContentAsync<TRequest, TResult>(relativeUrl, content);
+            await this.apiClient.PostContentAsync<TRequest, TResult>(relativeUrl, content,"application/json");
 
         public async ValueTask<T> PutAsync<T>(string relativeUrl, T content) =>
            await this.apiClient.PutContentAsync<T>(relativeUrl, content);
