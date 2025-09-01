@@ -3,9 +3,9 @@ using System.Text.Json.Serialization;
 
 namespace OpenAI.Net.Models.ExternalCompleteions
 {
-    internal partial class CompletionResponse
+    internal partial class ExternalCompletionResponse
     {
-        public class Choice
+        public class ExternalChoice
         {
             [JsonProperty("text")]           
             public string Text { get; set; }

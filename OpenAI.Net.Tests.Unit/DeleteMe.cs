@@ -10,6 +10,8 @@ namespace OpenAI.Net.Tests.Unit
         [Fact]
         public void ShouldBeTrue() => Assert.True(true);
 
+
+
        // [Fact]
         //public async Task ShouldDoStuffAndDeleteMeTooAsync()
         //{
@@ -36,5 +38,7 @@ namespace OpenAI.Net.Tests.Unit
 
         //    Assert.NotNull(completionResponse);
         //}
+        //
+
     }
 }

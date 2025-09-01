@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace OpenAI.Net.Models.ExternalCompleteions
 {
-    internal partial class CompletionResponse
+    internal partial class ExternalCompletionResponse
     {
 
         [JsonProperty("id")]
@@ -22,10 +22,10 @@ namespace OpenAI.Net.Models.ExternalCompleteions
         
         public string SystemFingerprint { get; set; }
         [JsonProperty("choices")]
-        public Choice[] Choices { get; set; }
+        public ExternalChoice[] Choices { get; set; }
        
         [JsonProperty("usage")]
-        public Usage usage { get; set; }
+        public ExternalUsage usage { get; set; }
 
     }
 }

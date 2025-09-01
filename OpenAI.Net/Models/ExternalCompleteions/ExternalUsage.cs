@@ -3,9 +3,9 @@ using System.Text.Json.Serialization;
 
 namespace OpenAI.Net.Models.ExternalCompleteions
 {
-    internal partial class CompletionResponse
+    internal partial class ExternalCompletionResponse
     {
-        public class Usage
+        public class ExternalUsage
         {
             [JsonProperty("prompt_tokens")]         
             public int PromptTokens { get; set; }

@@ -9,7 +9,7 @@ namespace OpenAI.Net.Brokers.OpenAIs
 {
     internal partial interface IOpenAIBroker
     {
-        ValueTask<CompletionResponse> PostCompletionRequestAsync(CompletionRequest completionRequest);
+        ValueTask<ExternalCompletionResponse> PostCompletionRequestAsync(ExternalCompletionRequest completionRequest);
 
     }
 }
